@@ -16,7 +16,7 @@ a webring exclusive to sites with a chinese-character (hanzi) domain name. any T
    ```
 3. open a pull request
 
-once merged, your site is part of the ring. the prev / next / random links on every member's webring widget will include you.
+once merged, your site is part of the ring. the prev / next links on every member's webring widget will include you.
 
 ## adding the widget to your site
 
@@ -24,68 +24,26 @@ drop this into your page. it's self-contained — style the `#webring` selectors
 
 ```html
 <nav id="webring" aria-label="webring navigation">
-  <span id="webring-label">hanzi webring</span>
-  <div id="webring-links">
-    <a id="webring-prev" href="#">&larr;</a>
-    <a id="webring-random" href="#">random</a>
-    <a id="webring-next" href="#">&rarr;</a>
-  </div>
+  <span>hanzi webring</span>
+  <a id="webring-prev" href="#">&larr;</a>
+  <a id="webring-next" href="#">&rarr;</a>
 </nav>
 
 <style>
-  #webring {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
-    font-family: sans-serif;
-    font-size: 0.95rem;
-  }
-  #webring-links {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-  }
-  #webring a {
-    text-decoration: none;
-    color: inherit;
-    opacity: 0.6;
-  }
-  #webring a:hover {
-    opacity: 1;
-  }
+  #webring { display: flex; align-items: center; gap: 0.6rem; font-family: sans-serif; font-size: 0.95rem; }
+  #webring a { text-decoration: none; color: inherit; opacity: 0.6; }
+  #webring a:hover { opacity: 1; }
 </style>
 
 <script>
-  (function () {
-    const MEMBERS_URL = "https://raw.githubusercontent.com/ba0v/hanzi-webring/main/members.json";
-    const SELF = "your-site-name"; // must match your "name" in members.json
-
-    fetch(MEMBERS_URL)
-      .then((res) => res.json())
-      .then((members) => {
-        const prevLink = document.getElementById("webring-prev");
-        const nextLink = document.getElementById("webring-next");
-        const randomLink = document.getElementById("webring-random");
-        if (!prevLink || !nextLink || !randomLink) return;
-
-        const currentIndex = members.findIndex((m) => m.name === SELF);
-        const prevIndex = (currentIndex - 1 + members.length) % members.length;
-        const nextIndex = (currentIndex + 1) % members.length;
-
-        prevLink.href = members[prevIndex].url;
-        nextLink.href = members[nextIndex].url;
-
-        randomLink.addEventListener("click", (e) => {
-          e.preventDefault();
-          const others = members.filter((_, i) => i !== currentIndex);
-          const pick = others.length
-            ? others[Math.floor(Math.random() * others.length)]
-            : members[currentIndex];
-          window.location.href = pick.url;
-        });
-      });
-  })();
+  fetch("https://raw.githubusercontent.com/ba0v/hanzi-webring/main/members.json")
+    .then((res) => res.json())
+    .then((members) => {
+      const self = "your-site-name"; // must match your "name" in members.json
+      const i = members.findIndex((m) => m.name === self);
+      document.getElementById("webring-prev").href = members[(i - 1 + members.length) % members.length].url;
+      document.getElementById("webring-next").href = members[(i + 1) % members.length].url;
+    });
 </script>
 ```
 
