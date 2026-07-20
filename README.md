@@ -2,11 +2,11 @@
 
 # hanzi webring
 
-a webring exclusive to sites with a chinese-character (hanzi) domain name. any TLD, as long as the domain itself uses hanzi.
+a webring exclusive to sites with a non-Latin domain.
 
 ## requirements
 
-- your site's domain name must contain Chinese characters (hanzi). any TLD is fine.
+- any domain that isn't purely Latin/ASCII counts — Chinese, Japanese, Korean, Russian, Arabic, etc. — whether it's in the name (移動.com) or the TLD (example.移動).
 - your site should be live and reasonably stable (no permanent "under construction" pages).
 
 ## how to join
