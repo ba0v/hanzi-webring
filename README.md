@@ -27,7 +27,7 @@ drop this into your page. it's self-contained, style the `#webring` selectors ho
 
 ```html
 <nav id="webring" aria-label="webring navigation">
-  <span>hanzi webring</span>
+  <a href="https://github.com/ba0v/hanzi-webring" target="_blank" rel="noopener noreferrer">hanzi webring</a>
   <a id="webring-prev" href="#">&larr;</a>
   <a id="webring-next" href="#">&rarr;</a>
 </nav>
