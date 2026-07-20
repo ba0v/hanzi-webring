@@ -16,7 +16,7 @@ a webring exclusive to sites with a chinese-character (hanzi) domain name. any T
    ```
 3. open a pull request
 
-once merged, your site is part of the ring — the prev / next / random links on every member's webring widget will include you.
+once merged, your site is part of the ring. the prev / next / random links on every member's webring widget will include you.
 
 ## adding the widget to your site
 
