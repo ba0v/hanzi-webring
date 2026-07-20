@@ -11,6 +11,7 @@ a webring exclusive to sites with a chinese-character (hanzi) domain name. any T
 
 1. fork this repo
 2. add your entry to `members.json`:
+
    ```json
    { "name": "your-site-name", "url": "https://your-domain" }
    ```
