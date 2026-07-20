@@ -1,6 +1,6 @@
 # hanzi webring!!
 
-a webring exclusive to sites with a non-latin domain, maintained by bảo
+a webring exclusive to sites with a non-latin/english domains/TLDs, maintained by bảo.
 
 ## requirements
 
