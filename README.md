@@ -20,7 +20,7 @@ once merged, your site is part of the ring. the prev / next links on every membe
 
 ## adding the widget to your site
 
-drop this into your page. it's self-contained — style the `#webring` selectors however fits your site, or leave the defaults.
+drop this into your page. it's self-contained, style the `#webring` selectors however fits your site, or leave the defaults.
 
 ```html
 <nav id="webring" aria-label="webring navigation">
