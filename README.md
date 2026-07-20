@@ -6,8 +6,9 @@ a webring exclusive to sites with a non-Latin domain.
 
 ## requirements
 
-- any domain that isn't purely Latin/ASCII counts — Chinese, Japanese, Korean, Russian, Arabic, etc. — whether it's in the name (移動.com) or the TLD (example.移動).
+- any domain that isn't purely Latin/ASCII counts. chinese, japanese, korean, russian, arabic, etc. whether it's in the name (移動.com) or the TLD (example.移動).
 - your site should be live and reasonably stable (no permanent "under construction" pages).
+- no malicious sites
 
 ## how to join
 
