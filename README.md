@@ -55,5 +55,4 @@ replace `your-site-name` with the exact `"name"` you used in your `members.json`
 
 see [`members.json`](./members.json) for the current list.
 
-# showcase your cool websites with your sick domain names!!!
-discord coming soon???
+# please join and showcase your cool websites with your sick domain names :]
