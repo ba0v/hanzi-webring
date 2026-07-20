@@ -6,7 +6,7 @@ a webring exclusive to sites with a non-latin domain, maintained by bảo
 
 - any domain that isn't purely Latin/ASCII counts. chinese, japanese, korean, russian, arabic, etc. whether it's in the name (移動.com) or the TLD (example.移動).
 - your site should be live and reasonably stable (no permanent "under construction" pages).
-- no malicious sites
+- no malicious/nsfw sites
 
 ## how to join
 
