@@ -1,8 +1,6 @@
-# NOT FINISHED, DON'T JOIN YET ...
+# hanzi webring!!
 
-# hanzi webring
-
-a webring exclusive to sites with a non-Latin domain.
+a webring exclusive to sites with a non-latin domain, maintained by bảo
 
 ## requirements
 
@@ -56,3 +54,6 @@ replace `your-site-name` with the exact `"name"` you used in your `members.json`
 ## members
 
 see [`members.json`](./members.json) for the current list.
+
+# showcase your cool websites with your sick domain names!!!
+discord coming soon???
