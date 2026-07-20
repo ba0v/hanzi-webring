@@ -1,6 +1,6 @@
 # hanzi webring
 
-a webring exclusive to sites with a Chinese-character (hanzi) domain name — any TLD, as long as the domain itself uses hanzi.
+a webring exclusive to sites with a chinese-character (hanzi) domain name. any TLD, as long as the domain itself uses hanzi.
 
 ## requirements
 
